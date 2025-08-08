@@ -19,12 +19,6 @@
             padding: 1rem 2rem;
             text-align: center;
         }
-        header img {
-            border-radius: 50%;
-            vertical-align: middle;
-            width: 50px;
-            height: 50px;
-        }
         main {
             max-width: 900px;
             margin: 2rem auto;
@@ -34,24 +28,15 @@
         }
         h1, h2, h3 {
             color: #0d253f;
+            margin-top: 1.5rem;
         }
-        .intro {
+        p, ul {
             font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            line-height: 1.5;
         }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .images-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .images-gallery img {
-            width: calc(33% - 1rem);
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        ul {
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
         }
         a.button {
             display: inline-block;
@@ -72,8 +57,9 @@
             font-size: 0.9rem;
         }
         @media(max-width: 600px) {
-            .images-gallery img {
-                width: 100%;
+            main {
+                margin: 1rem;
+                padding: 1rem;
             }
         }
     </style>
@@ -81,7 +67,6 @@
 <body>
 
 <header>
-    <img src="http://localhost/wordpress/wp-content/uploads/2025/08/channels4_profile-1-150x150.jpg" alt="BlitzReport Logo" />
     <h1>Blitz Recap</h1>
 </header>
 
@@ -92,7 +77,7 @@
         </p>
     </section>
 
-    <section class="section about-us">
+    <section class="about-us">
         <h2>About us</h2>
         <h3>Pasión por el deporte</h3>
         <p>
@@ -128,7 +113,7 @@
         </p>
     </section>
 
-    <section class="section app-official">
+    <section class="app-official">
         <h2>App oficial</h2>
         <p>
             Conéctate con otros fanáticos.<br />
@@ -138,7 +123,7 @@
         <a href="https://download.blitzrecap.com/latest" class="button" target="_blank" rel="noopener noreferrer">Descargar App Blitz Recap</a>
     </section>
 
-    <section class="section latest-news">
+    <section class="latest-news">
         <h2>Últimas noticias deportivas - 8 de agosto 2025</h2>
         <ul>
             <li><strong>NFL:</strong> La pretemporada inicia hoy con grandes expectativas en los rookies.</li>
@@ -147,18 +132,6 @@
         </ul>
         <p>Todo lo que necesitas saber.</p>
     </section>
-
-    <section class="section images-gallery">
-        <h2>Galería destacada</h2>
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/08/cnne-1152625-220210112736-01b-sofi-infinity-screen-exlarge-169.jpg" alt="Imagen destacada 1" />
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/08/cnne-1152625-220210112736-01b-sofi-infinity-screen-exlarge-169-1.jpg" alt="Imagen destacada 2" />
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/08/channels4_profile.jpg" alt="Perfil canal 4" />
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/08/channels4_profile-1.jpg" alt="Perfil canal 4 - variante" />
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/08/nike-nfl-logo-lockup_native_1600.jpg" alt="Logo Nike NFL" />
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/08/aq7da83whbgf2dzg2f48.png" alt="Imagen extra 1" />
-        <img src="http://localhost/wordpress/wp-content/uploads/2025/08/aq7da83whbgf2dzg2f48-1.png" alt="Imagen extra 2" />
-    </section>
-
 </main>
 
 <footer>
